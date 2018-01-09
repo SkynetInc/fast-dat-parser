@@ -18,6 +18,7 @@ jobs:
     steps:
       - run: apt-get update
       - run: apt-get install -y wget git python-pip build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils clang cmake libogg-dev libvorbis-dev libflac-dev libfaad-dev libncursesw5-dev libasound2-dev libpulse-dev pulseaudio libmicrohttpd-dev libmp3lame-dev libcurl4-openssl-dev
+      - run: apt-get install -y libleveldb-dev
       - checkout
       - setup_remote_docker
       - attach_workspace:
