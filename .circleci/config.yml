@@ -30,8 +30,8 @@ jobs:
       - run: pip install awscli==${AWS_CLI_VERSION}
       - run: make
       # - run: make install
-      - run: ls -la ~/fat-dat-parser
-      - run: aws s3 cp ~/fat-dat-parser/parser s3://block.cointree.com/config/parser
+      - run: ls -la ~/fast-dat-parser
+      - run: aws s3 cp ~/fast-dat-parser/parser s3://block.cointree.com/config/parser
 
       - save_cache:
          key: fast-{{ .Branch }}-cache-{{ arch }}
